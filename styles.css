@@ -2,6 +2,11 @@ html, body {
     height: 100%;
     background: linear-gradient(blueviolet, deepskyblue, lightblue);
     font-family: 'billabongregular', sans-serif;
+    touch-action: manipulation;
+}
+
+button {
+    touch-action: manipulation;
 }
 
 button:focus {
@@ -53,9 +58,13 @@ button:focus {
     color: white;
     justify-content: center;
     width: 200px;
+    height: 200px;
+    text-transform: uppercase;
 }
 
 .title {
+    display: flex;
+    justify-content: center;
     font-size: 100px;
     color: #fff;
 }
@@ -68,8 +77,12 @@ button:focus {
 
     .btn-generate {
         display: block;
-        margin: 0.2em auto;
+        margin-top: 2em;
         font-size: 80px;
+    }
+
+    .btn-generate:hover {
+        border-color: transparent;
     }
 
     .letter {
