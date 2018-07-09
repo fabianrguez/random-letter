@@ -9,13 +9,13 @@ function randomLetter() {
   return lettersArray[randomNumber];
 }
 
-function printLetter(letter) {
-  letterDiv.textContent = letter;
+function printLetter(element, letter) {
+  element.textContent = letter;
 }
 
 function generate() {
   const letter = randomLetter();
-  printLetter(letter);
+  printLetter(letterDiv, letter);
   lettersShowed.push(letter);
 }
 
